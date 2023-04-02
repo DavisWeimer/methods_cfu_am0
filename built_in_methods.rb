@@ -27,9 +27,20 @@
 
 # SECTION 2: Calling methods on variables assigned to strings.
 # Declare 2 variables assigned to string objects.
+
+starchy = "potatoes"
+protien = "steak"
+
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/String.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# .partition() will separate a define amount of characters from a string
+puts starchy.partition("tat")
+# .succ will return the subsequent letter of the last letter in a string (and provides a similar behaviour for integers)
+puts protien.succ
+
+puts "——————————————————————————————————————————"
 
 # EXAMPLE
 # The start_with? method is called on the first_name variable, which stores the string object "Jeff". 
@@ -43,14 +54,35 @@ puts first_name.start_with?("J")
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
+
+days_alive = 10585
+preferred_listening_volume = 110
+
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# .divmod() returns the quotient of the integer entered into the parenthesis and also the remainder (if any). Both are rounded to the nearest whole number
+puts days_alive.divmod(365)
 
+# .lcm() will return the least common multiple of the variable integer and the integer entered in the parenthesis meaning the lowest number that is divisible by both.
+puts preferred_listening_volume.lcm(50)
+
+puts "——————————————————————————————————————————"
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
+
+speed_limits_den = [40,45,60,65,70,55]
+dnb_subgenres = ["Techstep", "Jungle", "Liquid Funk", "Neurofunk"]
+
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# .map {||} returns the class of the elements in the array
+puts speed_limits_den.map {|element| element.class}
+# .difference([]) returns a new array containing all elements EXCEPT the one(s) specified in the method
+puts dnb_subgenres.difference(["Techstep"])
+
+puts "——————————————————————————————————————————"
