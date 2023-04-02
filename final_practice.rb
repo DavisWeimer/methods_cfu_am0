@@ -6,15 +6,29 @@
 
 # 1: Write a method named greeting that returns a string with a general greeting. 
 
+def greeting 
+    "Hello, I cannot idetify your biometric signs. Please identify yourself."
+end
+
+greeting
 # What is the return value of your method?
+"Hello, I cannot idetify your biometric signs. Please identify yourself."
 # How many arguments did you pass your method?
+1
 
 
 # 2: Write a method named custom_greeting that returns a greeting WITH a specific name.
 
+def greeting_name(name)
+    "Hello #{name}, I cannot idetify your biometric signs. Please identify yourself."
+end
+
 # What is the return value of your method?
+"Hello #{name}, I cannot idetify your biometric signs. Please identify yourself."
 # How many arguments did you pass your method?
+2
 # What data type was your argument(s)?
+String
 
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
