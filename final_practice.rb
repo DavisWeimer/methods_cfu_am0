@@ -7,14 +7,16 @@
 # 1: Write a method named greeting that returns a string with a general greeting. 
 
 def greeting 
-    "Hello, I cannot idetify your biometric signs. Please identify yourself."
+    "Hello, I cannot identify your biometric signs. Please identify yourself."
 end
 
-greeting
-# What is the return value of your method?
+puts greeting
+=begin
+What is the return value of your method?
 "Hello, I cannot idetify your biometric signs. Please identify yourself."
-# How many arguments did you pass your method?
+How many arguments did you pass your method?
 0
+=end
 
 
 # 2: Write a method named custom_greeting that returns a greeting WITH a specific name.
@@ -23,12 +25,16 @@ def greeting_name(name)
     "Hello #{name}, I cannot idetify your biometric signs. Please identify yourself."
 end
 
-# What is the return value of your method?
+puts greeting_name("Davis")
+
+=begin
+What is the return value of your method?
 "Hello #{name}, I cannot idetify your biometric signs. Please identify yourself."
-# How many arguments did you pass your method?
+How many arguments did you pass your method?
 1
-# What data type was your argument(s)?
+What data type was your argument(s)?
 String
+=end
 
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
@@ -37,12 +43,16 @@ def greeting_full_name(first, middle, last)
     "Hello #{first} #{middle} #{last}, I cannot identify your biometric signs. Please identify yourself."
 end
 
-# What is the return value of your method?
+puts greeting_full_name("Davis", "Romeo", "Weimer")
+
+=begin
+What is the return value of your method?
 "Hello #{first} #{middle} #{last}, I cannot identify your biometric signs. Please identify yourself."
-# How many arguments did you pass your method?
+How many arguments did you pass your method?
 3
-# What data type was your argument(s)?
+What data type was your argument(s)?
 String
+=end
 
 
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
@@ -52,12 +62,15 @@ def square(int)
     "The square root of #{int * int} is #{int}"
 end
 
-# What is the return value of your method?
+puts square(4)
+=begin
+What is the return value of your method?
 "The square root of #{int * int} is #{int}"
-# How many arguments did you pass your method?
+How many arguments did you pass your method?
 1
-# What data type was your argument(s)?
+What data type was your argument(s)?
 Integer
+=end
 
 
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
